@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="tasks" id="prev-conv">
+
+  <info>
+    <link type="guide" xref="index#text-conv"/>
+    <desc>Parcourir ou faire une recherche parmi vos conversations précédentes.</desc>
+    <revision pkgversion="2.28" version="0.1" date="2009-08-17" status="stub"/>
+    <revision pkgversion="2.28" version="0.2" date="2009-08-31" status="review">
+      <!--
+      <e:review by="shaunm@gnome.org" date="2009-08-31" status="done"/>
+      -->
+    </revision>
+    <credit type="author">
+      <name>Milo Casagrande</name>
+      <email>milo@ubuntu.com</email>
+    </credit>
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>    
+<!--
+    <copyright>
+      <year>2009</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+    <include href="legal.xml" xmlns="http://www.w3.org/2001/XInclude"/>
+-->
+  </info>
+
+  <title>Affichage des conversations précédentes</title>
+
+  <comment>
+    <cite date="2009-08-31">Shaun McCance</cite>
+    <p>La mise en surbrillance est étrange....<link href="http://bugzilla.gnome.org/show_bug.cgi?id=593733">#593733</link>. NON TRADUIT VOLONTAIREMENT CAR N'APPARAIT PAS DANS LA DOC !!!</p>
+  </comment>
+
+  <p><app>Empathy</app> enregistre automatiquement toutes les conversations textuelles que vous avez eu avec vos contacts. Vous pouvez <link xref="#search">Rechercher parmi toutes vos conversations précédentes</link> ou <link xref="#browse">Parcourir les conversations précédentes</link> par contact ou par date.</p>
+
+  <note>
+    <p>Vous n'avez pas besoin d'être connecté à internet pour consulter ou faire des recherches dans vos anciennes conversations.</p>
+  </note>
+
+  <section id="search" style="task">
+  <title>Recherche de conversations précédentes</title>
+
+  <p>Vous pouvez faire une recherche de texte intégral à travers toutes vos conversations précédentes.</p>
+
+  <steps>
+    <item>
+      <p>À partir de la fenêtre <gui>Liste des contacts</gui>, sélectionnez <guiseq><gui>Affichage</gui><gui>Conversations précédentes</gui></guiseq>. Vous pouvez aussi appuyer sur <key>F3</key>.</p>
+    </item>
+    <item>
+      <p>Sélectionnez l'onglet <gui>Rechercher</gui>.</p>
+    </item>
+    <item>
+      <p>Dans la zone de saisie <gui>ce terme</gui>, saisissez le texte que vous voulez rechercher. Cliquez sur <gui>Rechercher</gui> ou appuyez sur <key>Entrée</key>.</p>
+    </item>
+    <item>
+      <p>Toutes les conversations correspondant aux termes que vous avez saisis apparaissent dans la liste sous le champ de recherche. Par défaut, les conversations sont classées par date.</p>
+    </item>
+    <item>
+      <p>Cliquez sur la conversation que vous voulez consulter. <app>Empathy</app> sélectionne le texte qui correspond aux termes recherchés.</p>
+    </item>
+  </steps>
+  </section>
+
+  <section id="browse" style="task">
+  <title>Parcours de conversations précédentes</title>
+
+  <p>Vous pouvez parcourir vos précédentes conversations avec vos contacts ou dans des salons de discussion, classées par date.</p>
+
+  <steps>
+    <item>
+      <p>À partir de la fenêtre <gui>Liste des contacts</gui>, sélectionnez <guiseq><gui>Affichage</gui><gui>Conversations précédentes</gui></guiseq>. Vous pouvez aussi appuyer sur <key>F3</key>.</p>
+    </item>
+    <item>
+      <p>Sélectionnez l'onglet <gui>Conversations</gui>.</p>
+    </item>
+    <item>
+      <p>Sélectionnez un compte dans la liste déroulante en haut à gauche. Une liste de contacts et de salons de discussion apparaît en dessous.</p>
+    </item>
+    <item>
+      <p>Sélectionnez le contact ou le salon de discussion pour consulter l'historique des conversations. Par défaut la conversation la plus récente est affichée.</p>
+    </item>
+    <item>
+      <p>Vous pouvez parcourir vos conversations par date. Vous verrez apparaître en gras les jours pour lesquels vous avez eu une conversation avec le contact sélectionné. Cliquez sur un jour pour le sélectionner et sur les flèches à côté du mois et de l'année pour parcourir des dates plus anciennes.</p>
+    </item>
+  </steps>
+
+  <p>Vous pouvez rechercher du texte dans la conversation actuelle en le saisissant dans la zone de saisie en haut. Le texte correspondant sera mis en surbrillance.</p>
+
+  <note style="tip">
+    <p>Vous pouvez rapidement afficher vos conversations précédentes avec un de vos contacts à partir de la fenêtre <gui>Liste des contacts</gui>. Faites tout simplement un clic droit sur le contact et choisissez <gui>Afficher les conversations précédentes</gui>. La fenêtre <gui>Conversations précédentes</gui> s'ouvre directement sur le contact sélectionné.</p>
+  </note>
+    
+  </section>
+
+</page>

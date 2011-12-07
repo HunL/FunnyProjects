@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" id="geolocation-not-showing">
+
+  <info>
+    <link type="guide" xref="geolocation#problems"/>
+    <desc><app>Empathy</app> ne publie pas ma position géographique.</desc>
+    <revision pkgversion="2.28" version="0.1" date="2009-08-19" status="review">
+      <!--
+      <e:review by="shaunm@gnome.org" date="2009-09-09" status="deferred"/>
+      -->
+    </revision>
+    <credit type="author">
+      <name>Milo Casagrande</name>
+      <email>milo@ubuntu.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>    
+<!--
+    <copyright>
+      <year>2009</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+    <include href="legal.xml" xmlns="http://www.w3.org/2001/XInclude"/>
+-->
+  </info>
+
+  <title>Position géographique non publiée</title>
+
+  <p>Si vos contacts ne peuvent voir votre position, il est possible que <app>Empathy</app> ne puisse pas trouver avec une bonne marge de précision votre position géographique.</p>
+  <p>Dans ce cas, votre position ne sera pas publiée, mais vous êtes toujours capable de voir la position de vos contacts.</p>
+  <p>Si vous voulez publier votre position géographique, vous pouvez essayer d'utiliser un périphérique externe tel qu'un GPS.</p>
+
+  <note>
+    <p>Afin de pouvoir publier votre position géographique, votre service Jabber doit prendre en charge le protocole Personal Eventing Protocal (PEP). Une liste de <link href="http://coccinella.im/servers/servers_by_pubsub_pep.html">serveurs prenant en charge le PEP</link> est conservée en ligne. Google Talk ne prend pas actuellement en charge cette fonctionnalité.</p>
+  </note>
+
+</page>

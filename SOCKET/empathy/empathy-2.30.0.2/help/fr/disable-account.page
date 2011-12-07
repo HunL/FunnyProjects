@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="disable-account">
+
+  <info>
+    <link type="guide" xref="index#accounts"/>
+    <link type="seealso" xref="remove-account"/>
+    <desc>Empêcher <app>Empathy</app> de se connecter automatiquement sur un compte.</desc>
+    <revision pkgversion="2.28" version="0.1" date="2009-06-14" status="draft"/>
+    <revision pkgversion="2.28" version="0.2" date="2009-08-10" status="review"/>
+    <revision pkgversion="2.28" version="0.3" date="2009-08-27" status="review"/>
+    <revision pkgversion="2.28" version="0.4" date="2009-08-31" status="review">
+      <!--
+      <e:review by="shaunm@gnome.org" date="2009-08-31" status="done"/>
+      -->
+    </revision>
+    <revision pkgversion="2.30" version="0.5" date="2010-02-03" status="review"/>
+    <credit type="author">
+      <name>Milo Casagrande</name>
+      <email>milo@ubuntu.com</email>
+    </credit>
+    <credit type="author">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>    
+<!--
+    <copyright>
+      <year>2009</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+    <include href="legal.xml" xmlns="http://www.w3.org/2001/XInclude"/>
+-->
+  </info>
+
+  <title>Désactivation d'un compte</title>
+
+  <p>Vous pouvez désactiver un compte pour empêcher <app>Empathy</app> de se connecter sur celui-ci sans supprimer le compte complètement. Il se peut que vous vouliez désactiver et activer un compte si vous ne voulez être connecté sur ce compte qu'à certain instant, mais tout en utilisant <app>Empathy</app> pour d'autres comptes.</p>
+
+  <steps>
+    <item>
+      <p>À partir de la fenêtre <gui>Liste des contacts</gui>, sélectionnez <guiseq><gui>Édition</gui><gui>Comptes</gui></guiseq>, ou appuyez sur <key>F4</key>.</p>
+    </item>
+    <item>
+      <p>Sélectionnez le compte que vous souhaitez désactiver dans la liste des comptes dans la partie gauche de la fenêtre.</p>
+    </item>
+    <item>
+      <p>Décochez <gui style="checkbox">Activé</gui> sur le côté droit de la fenêtre.</p>
+    </item>
+  </steps>
+
+  <p>Pour réactiver le compte, cochez tout simplement <gui style="checkbox">Activé<gui>.</gui></gui></p>
+</page>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallrd.org/experimental/" type="topic" style="task nocando" id="irc-join-pwd">
+
+  <info>
+    <link type="guide" xref="irc-manage#manage"/>
+    <link type="seealso" xref="irc-join-room"/>
+    <desc>Se connecter à un salon de discussion IRC protégé.</desc>
+    <revision pkgversion="2.28" version="0.1" date="2009-08-07" status="review">
+      <!--
+      <e:review by="shaunm@gnome.org" date="2009-08-31" status="done"/>
+      -->
+    </revision>
+    <revision pkgversion="2.30" version="0.2" date="2010-03-12" status="review"/>
+    <credit type="author">
+      <name>Milo Casagrande</name>
+      <email>milo@ubuntu.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>    
+  </info>
+
+  <title>Connexion à un salon de discussion IRC protégé</title>
+
+  <p>Sur certains réseaux IRC, des salons de discussion IRC privés sont protégés par un mot de passe.</p>
+  <p>Pour rejoindre un salon de ce type, si vous connaissez le mot de passe :</p>
+  <steps>
+    <item>
+      <p><link xref="irc-join-room">Rejoignez le salon</link>.</p>
+    </item>
+    <item>
+      <p>Dans la zone de texte <gui>Ce salon est protégé par un mot de passe</gui>, saisissez le mot de passe du salon IRC et cliquez sur <gui style="button">Rejoindre</gui>.</p>
+    </item>
+  </steps>
+
+</page>

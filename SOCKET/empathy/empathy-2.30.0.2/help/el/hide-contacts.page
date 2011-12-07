@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="hide-contacts">
+
+  <info>
+    <link type="guide" xref="index#contacts"/>
+    <desc>Απόκρυψη των αποσυνδεδεμένων επαφών από τη <gui>Λίστα επαφών</gui> σας.</desc>
+    <revision pkgversion="2.30" version="0.1" date="2010-03-11" status="review"/>
+    <credit type="author">
+      <name>Milo Casagrande</name>
+      <email>milo@ubuntu.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>    
+  </info>
+
+  <title>Απόκρυψη επαφών εκτός σύνδεσης</title>
+
+  <p>Κανονικά, το <app>Empathy</app> εμφανίζει όλες τις επαφές σας: αυτές που είναι συνδεδεμένες, με τις οποίες μπορείτε να ξεκινήσετε μια συνομιλία, αλλά και αυτές που βρίσκονται εκτός σύνδεσης.</p>
+  <p>Για να αποκρύψετε τις αποσυνδεδεμένες επαφές:</p>
+
+  <steps>
+    <item>
+      <p>Από το παράθυρο <gui>Λίστα επαφών</gui>, επιλέξτε <guiseq><gui>Προβολή</gui><gui>Επαφές εκτός σύνδεσης</gui></guiseq>, ή πατήστε <keyseq><key>Ctrl</key><key>H</key></keyseq>.</p>
+    </item>
+    <item>
+      <p>Επαναλάβετε την ίδια διαδικασία για να εμφανίσετε και πάλι τις επαφές εκτός σύνδεσης.</p>
+    </item>
+  </steps>
+
+</page>

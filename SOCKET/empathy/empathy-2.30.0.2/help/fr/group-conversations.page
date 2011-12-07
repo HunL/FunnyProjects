@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" id="group-conversations">
+
+  <info>
+    <link type="guide" xref="index#text-conv"/>
+    <desc>Commencer ou rejoindre une conversation de groupe avec vos contacts.</desc>
+    <revision pkgversion="2.28" version="0.1" date="2009-08-02" status="stub"/>
+    <revision pkgversion="2.28" version="0.2" date="2009-08-17" status="draft"/>
+    <revision pkgversion="2.28" version="0.2" date="2009-08-17" status="review">
+      <!--
+      <e:review by="shaunm@gnome.org" date="2009-09-09" status="deferred"/>
+      -->
+    </revision>
+    <credit type="author">
+      <name>Milo Casagrande</name>
+      <email>milo@ubuntu.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>    
+<!--
+    <copyright>
+      <year>2009</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+    <include href="legal.xml" xmlns="http://www.w3.org/2001/XInclude"/>
+-->
+  </info>
+
+  <title>Conversations de groupe</title>
+  
+  <p>Les conversations de groupe vous permettent d'avoir des conversations textuelles avec plus d'un contact à la fois.</p>
+  <p>Pour avoir une conversation de groupe, vous devez posséder un compte Jabber ou Google Talk ou un compte Personnes à proximité.</p>
+
+  <note>
+    <p>Vous ne pouvez avoir de conversation de groupe qu'avec des contacts qui utilisent le même service que vous.</p>
+  </note>
+
+  <section id="start-group-conv">
+
+  <title>Démarrage d'une conversation de groupe</title>
+
+  <steps>
+    <item>
+      <p>À partir de la fenêtre <gui>Liste des contacts</gui>, sélectionnez <guiseq><gui>Salon</gui><gui>Rejoindre</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Dans la liste déroulante <gui>Compte</gui>, sélectionnez le compte que vous voulez utiliser pour la conversation de groupe.</p>
+    </item>
+    <item>
+      <p>Dans la zone de texte <gui>Serveur</gui>, saisissez le nom du serveur qui hébergera la conversation.</p>
+      <p>Laissez-la vide, s'il s'agit du serveur actuel.</p>
+    </item>
+    <item>
+      <p>Dans la zone de texte <gui>Salon</gui>, saisissez le nom que vous souhaitez donner à la conversation.</p>
+      <note>
+        <p>C'est le nom du salon dans lequel vous allez avoir une conversation. Ce nom sera rendu public pour que d'autres personnes le rejoignent. Il n'est pas possible de créer un salon privé.</p>
+      </note>
+    </item>
+    <item>
+      <p>Pour inviter d'autres contacts à rejoindre la conversation de groupe, sélectionnez dans la fenêtre <gui>Liste des contacts</gui> le contact que vous souhaitez inviter et effectuez une des actions suivantes :</p>
+      <list>
+        <item>
+          <p>Cliquez droit sur le contact et choisissez <gui>Inviter à un salon de discussion</gui>.</p>
+        </item>
+        <item>
+          <p>Choisissez <guiseq><gui>Édition</gui><gui>Contact</gui><gui>Inviter à un salon de discussion</gui></guiseq>.</p>
+        </item>
+      </list> 
+      <p>Si plusieurs conversations de groupe sont ouvertes, choisissez celle à laquelle vous invitez vos contacts.</p>
+    </item>
+  </steps>
+  
+  </section>
+
+  <section id="join-group-conv">
+
+  <title>Connexion à une conversation de groupe</title>
+
+  <steps>
+    <item>
+      <p>À partir de la fenêtre <gui>Liste des contacts</gui>, sélectionnez <guiseq><gui>Salon</gui><gui>Rejoindre</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Agrandir la section <gui>liste des salons</gui> pour afficher tous les salons existants.</p>
+    </item>
+    <item>
+      <p>Double-cliquez sur le nom d'un salon pour le rejoindre.</p>
+    </item>
+  </steps>
+
+  <p>Il n'est pas possible de rejoindre tous les salons existants. Il se peut que certains salons demandent un mot de passe ou ne soient accessibles que sur invitation. <app>Empathy</app> ne prend pas en charge ces types de salons.</p>
+
+  <!-- TODO: find out where the password protected or invitation only icons are
+  and create a table. -->
+
+  </section>
+
+</page>

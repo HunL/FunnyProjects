@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="prob-conn-acctdisabled">
+
+  <info>
+    <link type="guide" xref="prob-conn"/>
+    <desc>Le compte que vous voulez utiliser n'est pas activé dans la liste des comptes.</desc>
+    <revision pkgversion="2.28" version="0.1" date="2009-06-17" status="draft"/>
+    <revision pkgversion="2.28" version="0.2" date="2009-08-14" status="review"/>
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Milo Casagrande</name>
+      <email>milo@ubuntu.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>    
+<!--
+    <copyright>
+      <year>2009</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+    <include href="legal.xml" xmlns="http://www.w3.org/2001/XInclude" />
+-->
+  </info>
+
+  <title>Mon compte n'est pas activé</title>
+
+  <p>Si vous essayez de commencer une nouvelle conversation, ou de rejoindre un groupe de discussion, et que le compte que vous souhaitez utiliser n'est pas actif dans la liste déroulante, les détails de ce compte sont probablement incorrects.</p>
+
+  <steps>
+    <item>
+      <p>Assurez-vous d'être connecté à internet ou au réseau local.</p>
+    </item>
+    <item>
+      <p>Sélectionnez <guiseq><gui>Édition</gui><gui>Comptes</gui></guiseq> et sélectionnez le compte qui ne fonctionne pas.</p>
+    </item>
+    <item>
+      <p>Saisissez votre nom d'utilisateur et votre mot de passe afin de vous assurer qu'ils sont corrects.</p>
+    </item>
+    <item>
+      <p>Vérifiez dans la section <gui>Avancé</gui> si tous les paramètres sont corrects.Vous devriez trouver ces paramètres sur le site internet de votre service de messagerie.</p>
+    </item>
+    <item>
+      <p>Vérifiez que la case <gui style="checkbox">Activé</gui> est bien cochée. Si ce n'est pas le cas, cochez cette case pour activer le compte.</p>
+    </item>
+  </steps>
+
+</page>

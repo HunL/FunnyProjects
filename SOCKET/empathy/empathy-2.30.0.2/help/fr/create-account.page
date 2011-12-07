@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="create-account">
+
+  <info>
+    <link type="guide" xref="index#accounts"/>
+    <link type="seealso" xref="add-account"/>
+    <desc>S'inscrire à un compte avec l'un des services de messagerie pris en charge.</desc>
+    <revision pkgversion="2.28" version="0.1" date="2009-06-21" status="draft"/>
+    <revision pkgversion="2.28" version="0.2" date="2009-08-07" status="review">
+      <!--
+      <e:review by="shaunm@gnome.org" date="2009-09-02" status="done"/>
+      -->
+    </revision>
+    <credit type="author">
+      <name>Milo Casagrande</name>
+      <email>milo@ubuntu.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>    
+<!--
+    <copyright>
+      <year>2009</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+    <include href="legal.xml" xmlns="http://www.w3.org/2001/XInclude"/>
+-->
+  </info>
+
+  <title>Inscription à un nouveau compte</title>
+
+  <p>Pour la plupart des comptes, il est nécessaire de créer un compte avec un fournisseur de compte avant de pouvoir se connecter en utilisant des applications de messagerie instantanée comme <app>Empathy</app>. Avec certains fournisseurs de compte, vous pouvez utiliser <app>Empathy</app> pour enregistrer un nouveau compte en utilisant les mêmes étapes que celles pour <link xref="add-account">Ajouter un compte</link>.</p>
+
+  <p>Cette page fournit des informations sur la façon de créer un nouveau compte pour divers types de comptes. Votre fournisseur de compte devrait vous fournir un identifiant de connexion et un mot de passe ainsi que d'autres informations qui peuvent être nécessaires pour se connecter avec <app>Empathy</app>.</p>
+
+  <section id="jabber">
+    <title>Jabber</title>
+
+    <p>Jabber est un système de messagerie instantanée ouvert. Tout comme les courriels, Jabber vous permet de choisir votre fournisseur de compte et de communiquer avec tous les autres utilisateurs de Jabber, indépendamment de leur fournisseur de compte.</p>
+
+    <p>Vous devez créer un nouveau compte avec un fournisseur Jabber. Il y a de nombreux fournisseurs gratuits ; un fournisseur célèbre est <link href="http://register.jabber.org/">Jabber.org</link>.</p>
+
+    <note>
+      <p>Si vous utilisez Google Mail ou Google Talk, vous avez déjà un compte Jabber. Google Talk est un service Jabber. Utilisez tout simplement votre adresse électronique Google Mail et votre mot de passe dans <app>Empathy</app> pour vous connecter.</p>
+    </note>
+  </section>
+
+  <section id="salut">
+    <title>Personnes à proximité</title>
+
+    <p>Vous n'avez pas à créer de compte avec un fournisseur de service pour utiliser cette fonctionnalité. Ce service fonctionne dès l'instant où vous êtes connecté à réseau local tel qu'une zone de connexion WiFi. Il recherche automatiquement tous les autres utilisateurs sur le réseau qui utilisent également ce service.</p>
+
+    <p>Pour plus d'informations, consultez <link xref="salut-protocol"/>.</p>
+  </section>
+
+  <section id="sip-services">
+    <title>SIP</title>
+
+    <p>SIP est un système libre qui permet aux utilisateurs d'avoir des conversations audio et vidéo sur internet. Vous devez créer un compte avec un fournisseur SIP. Vous pouvez communiquer avec tous les autres utilisateurs, quel que soit le fournisseur SIP qu'ils utilisent.</p>
+
+    <p>Il y a un grand nombre de fournisseurs de comptes SIP gratuits populaires ; l'un deux est <link href="https://signup.sipphone.com/new-users/app?class=NewUser;proc=start">Sipphone</link>.</p>
+
+    <note style="warning">
+      <p>En raison de différences techniques, le service gratuit <link href="https://www.ekiga.net/index.php?page=register">Ekiga.net</link> ne fonctionne actuellement pas avec <app>Empathy</app>.</p>
+    </note>
+
+    <p>Certains fournisseurs SIP vous autorisent à passer des appels téléphoniques normaux à partir de votre ordinateur. En général, vous devez souscrire à un service payant pour cette fonctionnalité.</p>
+  </section>
+
+  <section id="irc">
+    <title>IRC</title>
+
+    <p>Il n'est pas nécessaire de s'inscrire à un compte pour utiliser IRC. Bien que vous deviez indiquer un pseudonyme lorsque vous ajoutez un compte IRC dans <app>Empathy</app>, ce pseudo n'est en vigueur que lorsque vous vous connectez. Si un autre utilisateur est en train d'utiliser le pseudo, vous devez en choisir un nouveau.</p>
+
+    <p>Certains réseaux IRC utilisent un service appelé NickServ pour permettre aux utilisateurs de protéger leur pseudonyme. Consultez <link xref="irc-nick-password"/> pour plus d'informations.</p>
+
+    <p>Certains serveurs IRC sont protégés par mot de passe. Vous devez connaître le mot de passe pour vous connecter à ces serveurs. En général, ce sont des réseaux IRC privés.</p>
+  </section>
+
+  <section id="proprietary-services">
+    <title>Services propriétaires</title>
+
+    <p>Il y a de nombreux services de messagerie instantanée propriétaires qui ont été développés par différentes compagnies ou organisations. <app>Empathy</app> vous permet de vous connecter à un compte existant pour la plupart des services populaires. Pour créer un nouveau compte avec l'un de ces services, vous devez visiter le site Web du service et accepter les conditions d'utilisation.</p>
+
+    <list>
+      <item>
+        <p>
+          <link href="http://dashboard.aim.com/aim">AIM</link>
+        </p>
+      </item>
+      <item>
+        <p>
+          <link href="https://www.icq.com/register/">ICQ</link>
+        </p>
+      </item>
+      <item>
+        <p>
+          <link href="https://accountservices.passport.net">MSN</link>
+        </p>
+      </item>
+      <item>
+        <p>
+          <link href="https://login.yahoo.com/config/login">Yahoo!</link>
+        </p>
+      </item>
+    </list>
+  </section>
+
+</page>
