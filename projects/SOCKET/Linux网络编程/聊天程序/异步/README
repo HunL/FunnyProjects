@@ -1,9 +1,0 @@
-For server:
-gcc -Wall server.c -o server
-
-./server 127.0.0.1 
-
-For client:
-gcc -Wall client.c -o client
-
-./client 127.0.0.1
