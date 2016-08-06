@@ -1,20 +1,4 @@
-/*
- * =====================================================================================
- *
- *       Filename:  client.c
- *
- *    Description:  传送文件的客户端程序
- *
- *        Version:  1.0
- *        Created:  12/02/2011 10:43:49 PM
- *       Revision:  none
- *       Compiler:  gcc
- *
- *         Author:  Qingping Hou (houqp), dave2008713@gmail.com
- *        Company:  
- *
- * =====================================================================================
- */
+
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>//for bzero
