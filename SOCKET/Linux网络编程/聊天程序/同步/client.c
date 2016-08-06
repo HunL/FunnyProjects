@@ -1,17 +1,8 @@
 /*
  * =====================================================================================
  *
- *       Filename:  client.c
- *
- *    Description:  TCP.同步聊天。对字符串处理比较充分。reference:http://blog.chinaunix.net/space.php?uid=8196371&do=blog&id=1641031
- *
- *        Version:  1.0
- *        Created:  11/21/2011 09:22:36 AM
- *       Revision:  none
- *       Compiler:  gcc
- *
- *         Author:  Qingping Hou (houqp), dave2008713@gmail.com
- *        Company:  
+ *    Description:  TCP.同步聊天。对字符串处理比较充分。
+ *    Reference:    http://blog.chinaunix.net/space.php?uid=8196371&do=blog&id=1641031
  *
  * =====================================================================================
  */
