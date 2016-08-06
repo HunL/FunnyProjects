@@ -1,20 +1,4 @@
-/*
- * =====================================================================================
- *
- *       Filename:  server.c
- *
- *    Description:  服务器端
- *
- *        Version:  1.0
- *        Created:  11/21/2011 10:38:39 AM
- *       Revision:  none
- *       Compiler:  gcc
- *
- *         Author:  Qingping Hou (houqp), dave2008713@gmail.com
- *        Company:  
- *
- * =====================================================================================
- */
+
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
