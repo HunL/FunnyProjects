@@ -1,18 +1,11 @@
 /*
  * =====================================================================================
  *
- *       Filename:  client.c
- *
- *    Description:  TCP.异步聊天，在同步通信基础上增加IO复用功能，实现异步通信。使用IO复用可以在等待的时候加入了超时的时间，如果等待的时间没有达到超时时间，那么该情况与阻塞的情况一致。而当超时的时间到达时，仍没有数据接收到，系统回返回0，不再等待。select函数就实现了这个功能。reference:http://blog.chinaunix.net/space.php?uid=8196371&do=blog&id=1642035
- *
- *        Version:  1.0
- *        Created:  11/21/2011 09:22:36 AM
- *       Revision:  none
- *       Compiler:  gcc
- *
- *         Author:  Qingping Hou (houqp), dave2008713@gmail.com
- *        Company:  
- *
+ *    Description:  TCP.异步聊天，在同步通信基础上增加IO复用功能，实现异步通信。
+ *    使用IO复用可以在等待的时候加入了超时的时间，如果等待的时间没有达到超时时间，那么该情况与阻塞的情况一致。
+ *    而当超时的时间到达时，仍没有数据接收到，系统回返回0，不再等待。select函数就实现了这个功能。
+ *    Reference:    http://blog.chinaunix.net/space.php?uid=8196371&do=blog&id=1642035
+ *    
  * =====================================================================================
  */
 #include<stdio.h>
