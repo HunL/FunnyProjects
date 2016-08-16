@@ -1,0 +1,4 @@
+Hello GitHub! -2011.11.22
+
+1、hosts_bak should be kept in /etc directory.
+2、files(my.tex、stdMng.jpg、moderncv.cls、moderncvthemegraduate.sty) should work together with the command "xelatex my.tex".

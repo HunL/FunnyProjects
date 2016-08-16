@@ -1,0 +1,117 @@
+%\documentclass[11pt,a4paper, noblankpage]{moderncv}
+\documentclass[xetex]{moderncv}
+% moderncv themes
+\moderncvtheme[green]{graduate}                % idem
+
+% character encoding
+\usepackage{xunicode, xltxtra}
+\setmainfont[Mapping=tex-text]{文泉驿正黑}
+\setsansfont[Mapping=tex-text]{文泉驿正黑}
+\XeTeXlinebreaklocale "zh"
+\widowpenalty=10000
+
+% adjust the page margins
+\usepackage[scale=0.85]{geometry}
+\AtBeginDocument{\recomputelengths}
+
+% personal data
+\firstname{李}\familyname{杰辉}
+\brief{\small{本简历由自由软件XeLaTeX驱动!}}
+\title{李杰辉求职简历}
+\address{广州市海珠区新港西路135号}{510275}
+\mobile{(+86)15017551234}
+\phone{0668-7390603}
+\email{ljiehui0826@gmail.com}
+%\extrainfo{http://l-jiehui.blogspot.com}
+\photo[64pt]{stdMng.jpg}
+%\quote{求职意向：Linux C/C++开发}
+\quote{求职意向：软件研发工程师}
+
+\nopagenumbers{}
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+\section{教育背景}
+\cvcomputer {学校：}{中山大学}{学历：}{本科}
+\cvcomputer {专业：}{信息与计算科学}{就读时间：}{2008年9月-2012年6月}
+\cvline{主修课程：}{C/C++语言程序设计、数据结构、操作系统、计算机网络、计算机图形学、数字图像处理、软件工程}
+
+\section{IT及英语技能}
+\cvline{英语水平}{通过CET-6，能熟练阅读大多数英文计算机资料，能用英语进行日常交流}
+\cvline{编程语言}{熟练掌握C/C++编程语言、熟悉GTK+程序开发、掌握Linux网络编程、了解Open GL}
+\cvline{Linux工具}{掌握Vim编辑器、Eclipse开发工具、Makefile和LaTeX排版工具的使用}
+\cvline{算法思想}{深入理解面向对象思想，掌握算法的设计与分析}
+\cvline{脚本}{熟悉UNIX/Linux Shell和Python脚本的编写}
+
+\section{项目经验（近期）}
+
+\cvproject{Pintos操作系统项目的实现}{2011年6月}
+%\cvline{开发平台}{Linux和Vim}
+\cvline{开发平台}{Vim和GitHub}
+\cvline{项目描述}{Pintos是一个用于教学的操作系统，学生通过参与该项目可以很好地提高自己对操作系统知识的了解，并且通过自己动手设计与实现可以为自己动手写一个操作系统打下坚实基础。与小组成员合作完成了线程、用户程序和虚拟存储的项目部分，在此过程中不仅大大加深了自己对操作系统的了解，而且增强了自己的编程能力和信心。}
+\cvline{责任描述}{作为核心成员，负责线程调度和多级队列反馈部分的设计与编码实现。}
+
+\cvproject{BLAST项目管理系统的开发}{2011年8月}
+\cvline{开发平台}{Linux和Vim}
+\cvline{项目描述}{BLAST项目管理系统基于SVN版本管理工具，是中山大学并行计算重点实验室生物信息学项目小组用来安排、分配任务和管理人员的系统。}
+\cvline{责任描述}{作为核心成员，负责编码实现系统后台相关功能函数。}
+
+\cvproject{Linux扫雷游戏的开发}{2011年9月}
+\cvline{开发平台}{GTK+和Vim}
+\cvline{项目描述}{在Linux系统上用GTK+库实现windows系统上很受欢迎的扫雷游戏。}
+\cvline{责任描述}{包括界面设计和算法的编码实现。}
+
+%\cvproject{笃行工作室网站的搭建}{2011年3月至今}
+%\cvline{开发平台}{Linux和Wordpress}
+%\cvline{项目描述}{笃行工作室网站。该网站用Wordpress搭建而成，是用于工作室内部新闻发布和信息交流的平台。}
+%\cvline{责任描述}{负责网站主题设计和编码工作。}
+
+%\cvproject{基于数据仓库的银行信用系统的设计}{2011年3月到6月}
+%\cvline{开发平台}{SQL Server 2008和Windows XP}
+%\cvline{项目描述}{该系统是企业和个人客户群的信用咨询和评价系统。建立该系统时，首先用数据仓库建立企业和个人客户群的数据库，再用PowerBuilder抽取出模块，然后用spider工具箱给抽取出来的模块附上可信度，最后通过OLAP提供决策支持。}
+%\cvline{责任描述}{负责团队组织和系统设计。}
+
+\section{实习经历}
+
+\cvproject{中山大学并行计算重点实验室}{软件开发}
+\cvline{介绍}{该实验室成立的目标是实现大规模数据的更快的计算速度。在实习期间，我们的学习主要包括了：开发任务管理系统、学习各种算法、学习并编写Makefile、编写Eclipse插件和搭建并测试各种软件环境等。在与老师同学的交流学习过程中，我接触到了更多关于计算机的知识，如程序编写、硬件架构、各种软件知识等，自己技术技能得到很大提升，各方面收获颇丰。}
+\cvline{时间}{2011年3月-至今}
+%\cvline{职责}{\emph{软件开发}
+\cvline{职责}{负责任务管理系统的代码编写等任务。}
+
+\cvproject{中山大学数学与计算科学学院笃行工作室}{}
+\cvline{介绍}{该工作室是学校里最为活跃的学生团体之一，主要活动包括Linux技术交流和数模比赛等。在此工作室里，我主要参加了各种Linux技术交流活动的讨论，例如LFS，Linux上网认证脚本的实现，广州Linux用户组的几次技术交流会。参加这些活动极大地开阔了自己的技术视野以及丰富了自己的计算机知识，更让自己感受到了开源文化的迷人之处。}
+\cvline{时间}{2010年9月-至今}
+%\cvline{职责}{\emph{PP仿真软件开发}
+\cvline{职责}{组织带领成员们讨论及参与各种Linux技术交流活动。}
+
+\section{所任职务}
+\cvline{院级}{中山大学数计学院毽球队队长}
+\cvline{班级}{信息与计算科学B班生活委员}
+
+\section{获奖情况}
+\cvline{奖学金}{获得2010-2011学年度三等奖学金。}
+\cvline{院运会}{两次打破中山大学数计学院男子4*400米接力赛纪录且同时获得冠军。}
+%\cvline{吉他}{班级吉他队获得班级风采大赛二等奖。}
+
+\section{其他特长}
+\cvline{\Neutral~}{一年Linux操作系统使用经验。熟悉PHP、HTML/CSS、Javascript等语言，能制作网页和搭建以及维护个人维基。}
+
+\section{兴趣爱好}
+\cvitem{}{\small 读博客、音乐、运动、电子产品、旅游}
+
+\section{自我评价}
+%\cvline{\Neutral~}{\small 进取精神、钻研精神、合作精神}
+%\cvline{\Neutral~}{\small 真诚、热情、开朗}
+\cvline{\Neutral~}{进取精神、钻研精神、合作精神}
+\cvline{\Neutral~}{真诚、热情、开朗}
+%\cvline{\Neutral~}{我完全使用Ubuntu系统一年多，很喜欢开源文化和折腾Linux，尝试着完全用Linux工作和学习。对Linux内核开发心存向往，渴望能加入内核开发团队一起学习进步。}
+\cvline{\Neutral~}{我无法掩饰我对这份工作的渴望 --- 一份具有挑战性的软件研发职位！我对软件研发工作有着高度的热情，我更有足够的信心接受挑战。我相信我拥有足够的热情和耐性能完美地完成任务，因为我渴望挑战自己，渴望实现更大的个人价值。希望您能给我这样一个机会展示自己。}
+
+\end{document}
+
+%% end of file `resume.tex'.
