@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Homework</title>
+	<style>
+		#search_value{
+			width: 80%;
+            height: 50px;
+            box-shadow: 3px 5px grey, 1px 1px #333;
+		}
+
+	</style>
+</head>
+
+<body>
+<div class="contenner">
+	<div class="search">
+		<input id="search_value" type="text">
+		<button id=search>search</button>
+	</div>
+</div>
+
+<script src=lib/bootstrap-4.0.0-dist/js/bootstrap.min.js></script>
+<script src=lib/jquery-3.3.1.min.js></script>
+<script src=lib/nebulas.js></script>
+<script src=lib/nebPay.js></script>
+<script>
+	"use strict";
+
+	var dappAddr = "n1fiSrHpafc73EceBvoLJmJkLKHZP2y1UJu";
+
+    var nebulas = require("nebulas"),
+        Account = nebulas.Account,
+        neb = new nebulas.Neb();
+    neb.setRequest(new nebulas.HttpRequest("https://testnet.nebulas.io"));
+
+    // 搜索功能，查找最近提交的作业列表
+    $("#search").click(function(){
+
+    	var from = Account.NewAccount().getAddressString();
+
+    	var value = "0";
+    	var nonce = "0";
+    	var gas_price = "1000000";
+    	var gas_limit = "2000000";
+    	var callFunc = "get";
+    	var callArgs = "[\"" + $("search_value").val() + "\"]";
+    	var contract = {
+    		"func": callFunc,
+    		"args": callArgs
+    	}
+
+    	neb.api.call(from, dappAddr, value, nonce, gas_price, gas_limit, contract).then(function(resp) {
+    		cbSearch(resp)
+    	}).catch(function(err){
+    		console.log("error:" + err.message)
+    	})
+
+    })
+
+    function cbSearch(resp) {
+    	var result = resp.result
+    	console.log("return of rpc call: " + JSON.stringify(result))
+
+    	if(result === 'null'){
+    		console.log("result is equal to null")
+    	} else {
+    		try{
+    			result = JSON.parse(result)
+    		}catch(err){
+    			console.log("result error")
+    		}
+
+    		if(!!result.key){
+    			console.log("result.key: " + result.key)
+    			console.log("!!result.key: " + !!result.key)
+    		} else {
+    			console.log("else result.key: " + result.key)
+    			console.log("else !!result.key: " + !!result.key)
+    		}
+    	}
+
+    }
+
+</script>
+
+</body>
+</html>
+
+
