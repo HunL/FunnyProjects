@@ -11,7 +11,7 @@ var HomeWorkItem = function(text) {
 	    this.key = "";
 	    this.author = "";
 	    this.value = "";
-        this.time = "",
+        this.time = "";
 	}
 };
 
