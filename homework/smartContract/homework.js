@@ -66,6 +66,7 @@ SuperHomeWork.prototype = {
     },
 
     get: function () {
+        console.log("here get");
         this.HomeWorkKeyArray.sort(
             function(v1, v2){
                 return v1.time-v2.time;

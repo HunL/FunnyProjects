@@ -45,14 +45,15 @@
     	var gas_price = "1000000";
     	var gas_limit = "2000000";
     	var callFunc = "get";
-    	var callArgs = "[\"" + $("search_value").val() + "\"]";
+    	// var callArgs = "[\"" + $("search_value").val() + "\"]";
+        var callArgs = "";
     	var contract = {
     		"func": callFunc,
     		"args": callArgs
     	};
 
     	neb.api.call(from, dappAddr, value, nonce, gas_price, gas_limit, contract).then(function(resp) {
-    		cbSearch(resp);
+    		cbSearch(resp)
     	}).catch(function(err){
     		console.log("error:" + err.message)
     	})
