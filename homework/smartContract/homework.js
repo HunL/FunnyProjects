@@ -21,8 +21,16 @@ HomeWorkItem.prototype = {
 	}
 };
 
-var HomeWorkKeyArray = new Array();
-
+var HomeWorkKeyArray = function () {
+    LocalContractStorage.defineMapProperty(this, "repo", {
+        parse: function (text) {
+            return new HomeWorkItem(text);
+        },
+        stringify: function (o) {
+            return o.toString();
+        }
+    });
+};
 
 var SuperHomeWork = function () {
     LocalContractStorage.defineMapProperty(this, "repo", {
@@ -62,12 +70,14 @@ SuperHomeWork.prototype = {
         this.repo.put(key, homeworkItem);
 
 
-        this.HomeWorkKeyArray.push(homeworkItem);
+        // this.HomeWorkKeyArray.push(homeworkItem);
+        this.repo.HomeWorkKeyArray.push(homeworkItem);
     },
 
     get: function () {
         console.log("here get");
-        this.HomeWorkKeyArray.sort(
+
+        this.repo.HomeWorkKeyArray.sort(
             function(v1, v2){
                 return v1.time-v2.time;
             });
