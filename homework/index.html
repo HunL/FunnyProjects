@@ -21,8 +21,8 @@
 	</div>
 </div>
 
-<script src=lib/bootstrap-4.0.0-dist/js/bootstrap.min.js></script>
 <script src=lib/jquery-3.3.1.min.js></script>
+<script src=lib/bootstrap-4.0.0-dist/js/bootstrap.min.js></script>
 <script src=lib/nebulas.js></script>
 <script src=lib/nebPay.js></script>
 <script>
@@ -54,7 +54,7 @@
     	neb.api.call(from, dappAddr, value, nonce, gas_price, gas_limit, contract).then(function(resp) {
     		cbSearch(resp);
     	}).catch(function(err){
-    		console.log("error:" + err.message);
+    		console.log("error:" + err.message)
     	})
 
     })
