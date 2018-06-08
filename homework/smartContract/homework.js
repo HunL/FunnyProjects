@@ -21,7 +21,7 @@ HomeWorkItem.prototype = {
 	}
 };
 
-var HomeWorkKeyArray = new Array()
+var HomeWorkKeyArray = new Array();
 
 
 var SuperHomeWork = function () {
@@ -48,7 +48,7 @@ SuperHomeWork.prototype = {
             throw new Error("empty key / value");
         }
         if (value.length > 64 || key.length > 64){
-            throw new Error("key / value exceed limit length")
+            throw new Error("key / value exceed limit length");
         }
 
         var from = Blockchain.transaction.from;
@@ -62,14 +62,15 @@ SuperHomeWork.prototype = {
         this.repo.put(key, homeworkItem);
 
 
-        HomeWorkKeyArray.push(homeworkItem);
+        this.HomeWorkKeyArray.push(homeworkItem);
     },
 
     get: function () {
-        HomeWorkKeyArray.sort(function(v1, v2){
-            return v1.time-v2.time;
-        });
-        return HomeWorkKeyArray.splice(0,4);
+        this.HomeWorkKeyArray.sort(
+            function(v1, v2){
+                return v1.time-v2.time;
+            });
+        return this.HomeWorkKeyArray.splice(0,4);
     }
 };
 module.exports = SuperHomeWork;

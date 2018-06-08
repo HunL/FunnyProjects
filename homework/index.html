@@ -49,35 +49,35 @@
     	var contract = {
     		"func": callFunc,
     		"args": callArgs
-    	}
+    	};
 
     	neb.api.call(from, dappAddr, value, nonce, gas_price, gas_limit, contract).then(function(resp) {
-    		cbSearch(resp)
+    		cbSearch(resp);
     	}).catch(function(err){
-    		console.log("error:" + err.message)
+    		console.log("error:" + err.message);
     	})
 
     })
 
     function cbSearch(resp) {
-    	var result = resp.result
-    	console.log("return of rpc call: " + JSON.stringify(result))
+    	var result = resp.result;
+    	console.log("return of rpc call: " + JSON.stringify(result));
 
     	if(result === 'null'){
-    		console.log("result is equal to null")
+    		console.log("result is equal to null");
     	} else {
     		try{
-    			result = JSON.parse(result)
+    			result = JSON.parse(result);
     		}catch(err){
-    			console.log("result error")
+    			console.log("result error");
     		}
 
     		if(!!result.key){
-    			console.log("result.key: " + result.key)
-    			console.log("!!result.key: " + !!result.key)
+    			console.log("result.key: " + result.key);
+    			console.log("!!result.key: " + !!result.key);
     		} else {
-    			console.log("else result.key: " + result.key)
-    			console.log("else !!result.key: " + !!result.key)
+    			console.log("else result.key: " + result.key);
+    			console.log("else !!result.key: " + !!result.key);
     		}
     	}
 
