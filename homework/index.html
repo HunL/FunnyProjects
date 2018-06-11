@@ -28,7 +28,9 @@
 <script>
 	"use strict";
 
-	var dappAddr = "n1fiSrHpafc73EceBvoLJmJkLKHZP2y1UJu";
+	// var dappAddr = "n1fiSrHpafc73EceBvoLJmJkLKHZP2y1UJu";
+    // var dappAddr = "n1y13DJjrKHXSCbPoWseX8BUPjXiVxQXFKx";
+    var dappAddr = "n1j2vp5qEvcYxH4Y5hYSPRqxF8BGkwuYqp7";
 
     var nebulas = require("nebulas"),
         Account = nebulas.Account,
@@ -44,12 +46,17 @@
     	var nonce = "0";
     	var gas_price = "1000000";
     	var gas_limit = "2000000";
+        // var callFunc = "fiveData";
     	var callFunc = "get";
+        // var callFunc = 'len';
     	// var callArgs = "[\"" + $("search_value").val() + "\"]";
-        var callArgs = '[]';
+        // var callArgs = '[]';
+        var callArgs = '[1]';
     	var contract = {
-    		"func": callFunc,
-    		"args": callArgs
+            "function": callFunc,
+            "args": callArgs
+    		// "func": callFunc,
+    		// "args": callArgs
     	};
 
     	neb.api.call(from, dappAddr, value, nonce, gas_price, gas_limit, contract).then(function(resp) {
