@@ -23,7 +23,6 @@ HomeWorkItem.prototype = {
 
 var SuperHomeWork = function () {
     LocalContractStorage.defineMapProperty(this, "dataMap", {
-    // LocalContractStorage.defineMapProperty(this, "repo", {
         stringify: function (obj) {
             return obj.toString();
         },
@@ -32,18 +31,7 @@ var SuperHomeWork = function () {
         }
     });
 
-    // LocalContractStorage.defineMapProperty(this, "repoArray", {
-    //     stringify: function (obj) {
-    //         // 存储时直接转为字符串
-    //         return obj.toString();
-    //     },
-    //     parse: function (text) {
-    //         // 读取时获得HomeWorkItem对象
-    //         return new HomeWorkItem(text);
-    //     }
-    // });
     LocalContractStorage.defineMapProperty(this, "arrayMap");
-    // LocalContractStorage.defineMapProperty(this, "dataMap");
     LocalContractStorage.defineProperty(this, "size");
 
 };
@@ -74,35 +62,18 @@ SuperHomeWork.prototype = {
         var index = this.size;
         this.arrayMap.set(index, key);
         this.dataMap.set(key, homeworkItem);
-        // this.repo.put(key, homeworkItem);
-
-        // this.HomeWorkKeyArray.push(homeworkItem);
-        // this.repo.HomeWorkKeyArray.push(homeworkItem);
-        // this.repoArray.push(key, homeworkItem);
         this.size += 1;
     },
 
-    // get: function () {
-    //     console.log("here get");
-    //     this.repoArray.sort(
-    //         function(v1, v2){
-    //             return v1.time-v2.time;
-    //         });
-    //     return this.repoArray.splice(0,4);
-    // }
     get: function (key) {
-        // return this.dataMap.get(key);
-        return "111";
+        return this.dataMap.get(key);
     },
 
     len: function () {
-        // return this.size;
-        return "222";
+        return this.size;
     },
 
     fiveData: function (offset) {
-    // fiveData: function (limit, offset) {
-        // limit = parseInt(limit);
         limit = parseInt(5);
         offset = parseInt(offset);
 
