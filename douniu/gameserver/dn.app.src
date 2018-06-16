@@ -1,0 +1,14 @@
+{application, dn,
+ [
+  {description, "This is game server."},
+  {vsn, "1"},
+  {modules, [dn,dn_app,dn_sup,mh_networking]},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib,
+                  cowboy
+                 ]},
+  {mod, { dn_app, []}},
+  {env, [{http_port, 8080}]}
+ ]}.
