@@ -9,8 +9,15 @@
             height: 50px;
             box-shadow: 3px 5px grey, 1px 1px #333;
 		}
-
 	</style>
+
+    <style>
+        #add_value{
+            width: 80%;
+            height: 50px;
+            box-shadow: 3px 5px grey, 1px 1px #333;
+        }
+    </style>
 </head>
  
 <body>
@@ -19,6 +26,11 @@
 		<input id="search_value" type="text">
 		<button id=search>search</button>
 	</div>
+
+    <div class="add_banner hide">
+        <input type="text" id="add_value" placeholder="input contents for your keyword">
+        <button id=push>submit</button>
+    </div>
 </div>
 
 <script src=lib/jquery-3.3.1.min.js></script>
@@ -88,6 +100,59 @@
     			console.log("else !!result.key: " + !!result.key);
     		}
     	}
+
+    }
+
+
+    var NebPay = require("nebpay");
+    var nebPay = new NebPay();
+    var serialNumber;
+    // var callbackUrl = NebPay.config.mainnetUrl;
+    var callbackUrl = NebPay.config.testnetUrl;
+
+    // 添加功能，提交并保存作业
+    $("#push").click(function(){
+
+        // var from = Account.NewAccount().getAddressString();
+        var to = dappAddr;
+        var value = "0";
+        // var nonce = "0";
+        // var gas_price = "1000000";
+        // var gas_limit = "2000000";
+        var callFunc = "save";
+        // var callArgs = "[\"" + $("search_value").val() + "\"]";
+        var arg1 = $("#search_value").val(),
+            arg2 = $("#add_value").val();
+        var callArgs = JSON.stringify([arg1, arg2]);
+
+        serialNumber = nebPay.call(to, value, callFunc, callArgs, {
+            listener: cbPush,
+            callback: callbackUrl
+        });
+
+        // var contract = {
+        //     "function": callFunc,
+        //     "args": callArgs
+        // };
+
+        // neb.api.call(from, dappAddr, value, nonce, gas_price, gas_limit, contract).then(function(resp) {
+        //     cbAdd(resp)
+        // }).catch(function(err){
+        //     console.log("error:" + err.message)
+        // })
+
+    });
+
+    function cbPush(resp) {
+        console.log("response of push: " + JSON.stringify(resp));
+        var respString = JSON.stringify(resp);
+
+        if(respString.search("rejected by user") !== -1){
+            console.log("rejected");
+            alert(respString);
+        } else if(respString.search("txhash") !== -1){
+            console.log("thash");
+        }
 
     }
 
